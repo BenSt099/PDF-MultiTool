@@ -5,7 +5,7 @@
 image::IconForReadme.png[Icon of project]
 
 == Goal
-The project's goal is to provide a free, open-source Software for merging / splitting / renaming Pdf files.
+The project's goal is to provide a free, open-source Software for merging / splitting / renaming pdf files.
 
 == Installation
 
@@ -44,4 +44,4 @@ zsh PDF-Multitool
 -> Click https://github.com/BenSt099/PDF-MultiTool/issues[here] for further information.
 
 == License
-This is an open-Source project published under GPL3-License. For more Information, check out LICENSE.
+This is an Open-Source project published under GPL3-License. For more Information, check out https://github.com/BenSt099/PDF-MultiTool/blob/main/LICENSE[LICENSE].
