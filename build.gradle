@@ -1,0 +1,33 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'org.springframework.boot' version '2.7.5'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'org.pdfmultitool'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+application {
+	mainClassName = 'org.pdfmultitool.PdfMultiToolApplication'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+	implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+	implementation group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.24'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

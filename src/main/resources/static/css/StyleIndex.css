@@ -1,0 +1,53 @@
+::selection {
+    background-color: rgb(61, 138, 251);
+
+}
+
+#header {
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#main-section {
+   margin-top: 90px;
+   text-align: center;
+}
+
+#footer {
+    text-align: center;
+    border: none;
+    background-color: rgb(73, 80, 87);
+    padding: 90px 100px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+#heading {
+    font-size: 70px;
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#fileNameContainer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(110, 162, 217);
+    border-radius: 8px;
+    border: 2px solid rgb(10, 99, 150);
+}
+
+#statusContainer {
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(79, 79, 79);
+    background-color: rgb(176, 176, 176);
+}

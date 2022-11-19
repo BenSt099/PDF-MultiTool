@@ -1,0 +1,47 @@
+= PDF-MultiTool
+:toc: left
+:toc-title: Table Of Contents
+
+image::IconForReadme.png[Icon of project]
+
+== Goal
+The project's goal is to provide a free, open-source Software for merging / splitting / renaming Pdf files.
+
+== Installation
+
+1. Follow this https://github.com/BenSt099/PDF-MultiTool/releases[link].
+2. Click on *Assets* and download the zip file ("PDF-MultiTool_v1.zip").
+3. Depending on your operating system, follow these instructions:
+
+=== Windows
+-> Unzip the downloaded zip directory. It contains another zip directory named *PDF-Multitool-1.0.0.zip*. Unzip this folder, double-click on the unzipped one and open the folder */bin*. Then double-click `PDF-Multitool.bat`. The program should start immediately.
+
+=== Unix (MacOS / Linux)
+-> Unzip the downloaded file. It contains another zip directory named *PDF-Multitool-1.0.0.zip*. Unzip this folder, double-click on the unzipped one and open the folder */bin*. Open a terminal (zsh/bash) inside it and type:
+
+[source,Shell]
+----
+bash PDF-Multitool
+----
+
+or
+
+[source,Shell]
+----
+zsh PDF-Multitool
+----
+
+== Documentation & Help
+
+* When you've downloaded the zip file from https://github.com/BenSt099/PDF-MultiTool/releases[here] and unzipped the folder, navigate into the unzipped folder. You will find a file named *Multitool-docs.pdf*. It contains all information on how to use this software.
+
+-> While there is no documentation yet, you can still try it out. When you have to "Choose Order Of Selected Files", try something like "A,C,B,F,E". When you have to  "Choose Name Of Merged PDF", try out something like "Summary.pdf".
+
+-> If you try Splitting documents, try something like "2-3,4-8,15-27" (the pages in between will be packed into a new pdf file; range is inclusive), when you have to choose the "order of files".
+
+== Known Issues
+
+-> Click https://github.com/BenSt099/PDF-MultiTool/issues[here] for further information.
+
+== License
+This is an open-Source project published under GPL3-License. For more Information, check out LICENSE.
