@@ -27,10 +27,6 @@
                     <button class="nav-link" id="pills-split-tab" data-bs-toggle="pill" data-bs-target="#pills-split"
                             type="button" role="tab" aria-controls="pills-split" aria-selected="false">Split</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-rename-tab" data-bs-toggle="pill" data-bs-target="#pills-rename"
-                            type="button" role="tab" aria-controls="pills-rename" aria-selected="false">Rename</button>
-                </li>
             </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-merge" role="tabpanel" aria-labelledby="pills-merge-tab" tabindex="0">
@@ -147,9 +143,9 @@
                             </li>
                             <li class="list-group-item">
                                 <form th:action="@{/split/split}" method="post">
-                                <div class="input-group mb-3">
                                     <label>Input Sequence</label><br>
-                                    <input type="text" class="form-control" name="inputseq" placeholder="Splitting" aria-describedby="basic-addon2">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="inputseq" placeholder="Splitting" aria-describedby="basic-addon2">
                                     <span class="input-group-text" id="basic-addon2">e.g.: 1-2,4-6,7-7</span>
                                 </div>
                                 <label>Split Button</label><br>
@@ -166,10 +162,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="pills-rename" role="tabpanel" aria-labelledby="pills-rename-tab" tabindex="0">
-
-
             </div>
         </div>
     </div>

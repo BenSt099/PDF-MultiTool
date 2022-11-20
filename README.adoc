@@ -5,7 +5,7 @@
 image::IconForReadme.png[Icon of project]
 
 == Goal
-The project's goal is to provide a free, open-source Software for merging / splitting / renaming pdf files.
+The project's goal is to provide a free, open-source Software for merging & splitting pdf files.
 
 == Installation
 

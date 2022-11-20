@@ -24,17 +24,4 @@ public class MainController {
 
         return "index";
     }
-
-//    @PostMapping("/merge")
-//    public String merge(){
-//
-//        return "merge";
-//    }
-
-    @PostMapping("/split")
-    public String split(){
-
-        return "split";
-    }
-
 }
