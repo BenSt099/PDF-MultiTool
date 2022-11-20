@@ -35,7 +35,7 @@ zsh PDF-Multitool
 
 * When you've downloaded the zip file from https://github.com/BenSt099/PDF-MultiTool/releases[here] and unzipped the folder, navigate into the unzipped folder. You will find a file named *Multitool-docs.pdf*. It contains all information on how to use this software.
 
--> While there is no documentation yet, you can still try it out. When you have to "Choose Order Of Selected Files", try something like "A,C,B,F,E". When you have to  "Choose Name Of Merged PDF", try out something like "Summary.pdf".
+-> While there is no documentation yet, you can still try it out. When you have to "Choose Order Of Selected Files", try something like "A,C,B,F,E". When you have to  "Choose Name Of Merged PDF", try out something like "Summary" or "finalpdf".
 
 -> If you try Splitting documents, try something like "2-3,4-8,15-27" (the pages in between will be packed into a new pdf file; range is inclusive), when you have to choose the "order of files".
 

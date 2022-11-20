@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'org.pdfmultitool'
-version = '0.0.1-SNAPSHOT'
+version = 'V.1.0.0'
 sourceCompatibility = '17'
 
 application {
