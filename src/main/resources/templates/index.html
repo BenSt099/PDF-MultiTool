@@ -128,27 +128,32 @@
                     <div class="card" style="width: 60rem;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <label>Select File</label>
-                                <form action="#" th:action="@{/splitting/folder}" method="post">
+                                <label>Select File</label><br>
+                                <form th:action="@{/split/fileInput}" method="post">
                                     <button type="submit" class="btn btn-primary btn-lg">Browse File</button>
                                 </form>
                             </li>
                             <li class="list-group-item">
-                                <label>Name Of Selected File Is Displayed</label>
+                                <label>Select Folder</label><br>
+                                <form th:action="@{/split/finalFolder}" method="post">
+                                    <button type="submit" class="btn btn-primary btn-lg">Browse Folder</button>
+                                </form>
+                            </li>
+                            <li class="list-group-item">
+                                <label>Name Of Selected File Is Displayed</label><br>
                                 <div id="fileNameContainer">
                                     <p th:text="${filename}"></p>
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <label>Input Sequence</label>
+                                <form th:action="@{/split/split}" method="post">
                                 <div class="input-group mb-3">
+                                    <label>Input Sequence</label><br>
                                     <input type="text" class="form-control" name="inputseq" placeholder="Splitting" aria-describedby="basic-addon2">
                                     <span class="input-group-text" id="basic-addon2">e.g.: 1-2,4-6,7-9</span>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <label>Split Button</label>
-                                <form action="#" th:action="@{/splitting/split}" method="post">
+                                <label>Split Button</label><br>
+
                                     <button type="submit" class="btn btn-primary btn-lg">Split</button>
                                 </form>
                             </li>
