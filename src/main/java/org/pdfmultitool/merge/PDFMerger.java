@@ -15,13 +15,7 @@ public class PDFMerger {
     public static String approveInput(String pathToFolder, String sequenceOfPdf, String nameOfFinalPdf, String pathToFinalFolder, String[] files){
 
         if(files == null || files.length == 1 || pathToFolder == null || sequenceOfPdf == null
-                || nameOfFinalPdf == null || isValidSequence(sequenceOfPdf)){
-            System.out.println(pathToFolder);
-            System.out.println(sequenceOfPdf);
-            System.out.println(nameOfFinalPdf);
-            System.out.println(pathToFinalFolder);
-            System.out.println(Arrays.toString(files));
-            System.out.println(isValidSequence(sequenceOfPdf));
+                || nameOfFinalPdf == null || !isValidSequence(sequenceOfPdf)){
             return StatusCodes.FALSEINPUT.toString();
         }
 
@@ -72,8 +66,8 @@ public class PDFMerger {
         return StatusCodes.SUCCESS;
     }
 
-    private static boolean isValidSequence(String sequence){
+    public static boolean isValidSequence(String sequence){
 
-        return Pattern.matches("[A-Z],*", sequence);
+        return Pattern.matches("[A-Z,]*", sequence);
     }
 }
