@@ -28,4 +28,10 @@ class PDfSplitterTest {
         assertThat(PDfSplitter.isValidSequence("3-2,9-8,3-4")).isEqualTo(false);
     }
 
+    @Test
+    @DisplayName("test4: true exp.")
+    void testisValidOrder4(){
+
+        assertThat(PDfSplitter.isValidSequence("1-2,3-4,7-7")).isEqualTo(true);
+    }
 }
