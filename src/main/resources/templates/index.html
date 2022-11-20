@@ -38,28 +38,86 @@
                     <div class="card" style="width: 60rem;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <label>Select Folder</label>
-
+                                <label>Select Folder</label><br>
+                                <form th:action="@{/merge/folder}" method="post">
+                                    <button type="submit" class="btn btn-primary btn-lg">Browse Folder</button>
+                                </form>
                             </li>
                             <li class="list-group-item">
-                                <label>List of PDF-Files</label>
-
+                            <label>Choose Target Folder</label><br>
+                            <form th:action="@{/merge/targetFolder}" method="post">
+                                <button type="submit" class="btn btn-primary btn-lg">Browse Folder</button>
+                            </form>
                             </li>
                             <li class="list-group-item">
-                                <label>Choose Sequence Of PDF Files</label>
-
+                                <label>List of PDF-Files</label><br>
+                                <div id="tablePdfs">
+                                    <table class="table table-striped-columns">
+                                        <thead>
+                                        <tr>
+                                            <h4 id="headingTable">List Of PDF Files</h4>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                        <tr>
+                                            <td th:text="${v01}"></td>
+                                            <td th:text="${v02}"></td>
+                                            <td th:text="${v03}"></td>
+                                            <td th:text="${v04}"></td>
+                                            <td th:text="${v05}"></td>
+                                        </tr>
+                                        <tr>
+                                            <td th:text="${v06}"></td>
+                                            <td th:text="${v07}"></td>
+                                            <td th:text="${v08}"></td>
+                                            <td th:text="${v09}"></td>
+                                            <td th:text="${v10}"></td>
+                                        </tr>
+                                        <tr>
+                                            <td th:text="${v11}"></td>
+                                            <td th:text="${v12}"></td>
+                                            <td th:text="${v13}"></td>
+                                            <td th:text="${v14}"></td>
+                                            <td th:text="${v15}"></td>
+                                        </tr>
+                                        <tr>
+                                            <td th:text="${v16}"></td>
+                                            <td th:text="${v17}"></td>
+                                            <td th:text="${v18}"></td>
+                                            <td th:text="${v19}"></td>
+                                            <td th:text="${v20}"></td>
+                                        </tr>
+                                        <tr>
+                                            <td th:text="${v21}"></td>
+                                            <td th:text="${v22}"></td>
+                                            <td th:text="${v23}"></td>
+                                            <td th:text="${v24}"></td>
+                                            <td th:text="${v25}"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </li>
                             <li class="list-group-item">
-                                <label>Name Final PDF File</label>
+                                <label>Choose Sequence Of PDF Files</label><br>
+                                <form th:action="@{/merge/merging}" method="post">
+                                    <input type="text" class="form-control" placeholder="Sequence" name="seq" aria-describedby="basic-addon2" title="Specify Sequence / Order Of Pdfs">
 
-                            </li>
-                            <li class="list-group-item">
-                                <label>Choose Target Folder</label>
+                                <label>Name Final PDF File</label><br>
+                                    <div class="input-group mb-3" style="margin-top: 50px">
+                                        <input type="text" class="form-control" placeholder="Name" name="name" aria-describedby="basic-addon2" title="Specify Name Of Final Pdf">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon3">.pdf</span>
+                                        </div>
+                                    </div>
 
-                            </li>
-                            <li class="list-group-item">
-                                <label>Merge</label>
+                                <label>Merge</label><br>
 
+                                    <button type="submit" class="btn btn-primary btn-lg">Merge</button>
+                                    <div id="mergingInfo">
+                                        <p th:text="${name}">- - -</p>
+                                    </div>
+                                </form>
                             </li>
                         </ul>
                     </div>

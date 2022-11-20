@@ -1,0 +1,48 @@
+::selection {
+    background-color: rgb(61, 138, 251);
+
+}
+
+#header {
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#main-section {
+    margin-top: 90px;
+    text-align: center;
+    border: 2px solid rgb(88, 22, 29);
+    border-radius: 8px;
+    background-color: rgb(218, 53, 69);
+    padding: 100px 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#footer {
+    text-align: center;
+    border: none;
+    background-color: rgb(73, 80, 87);
+    padding: 90px 100px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+#heading {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+#backButton {
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 40px 140px;
+    margin-top: 10px;
+    background-color: rgb(61, 138, 251);
+}

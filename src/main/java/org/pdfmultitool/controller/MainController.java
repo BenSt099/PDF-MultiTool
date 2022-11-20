@@ -19,11 +19,18 @@ public class MainController {
         return "error";
     }
 
-    @PostMapping("/merge")
-    public String merge(){
+    @PostMapping("/error/goback")
+    public String goback(){
 
-        return "merge";
+        return "index";
     }
+
+//    @PostMapping("/merge")
+//    public String merge(){
+//
+//        return "merge";
+//    }
+
     @PostMapping("/split")
     public String split(){
 

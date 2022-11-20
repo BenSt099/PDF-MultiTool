@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BenSt099">
+    <meta name="description" content="PDF-MultiTool Error Page: V. 1.0.0">
+    <link rel="stylesheet" href="/css/StyleError.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <title>Error - PDF-MultiTool</title>
 </head>
 <body>
 
+    <div id="header">
+        <h1 id="heading">PDF-MultiTool</h1>
+        <h4>V.1.0.0</h4>
+    </div>
+
+    <div id="main-section">
+        <h2>Error</h2>
+        <form th:action="@{/error/goback}" method="post">
+            <label>Go Back To Main Page</label><br>
+            <input type="submit" id="backButton" value="Back">
+        </form>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <img src="/icons/github.svg" width="30" height="30" alt="GitHub-Icon">
+            <a href="https://github.com/BenSt099/PDF-MultiTool">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        setInterval(sendSignalToServer, 2000);
+        function sendSignalToServer()
+        {
+            fetch("http://localhost:9000/BeatController/checkBeats");
+        }
+    </script>
+    <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
